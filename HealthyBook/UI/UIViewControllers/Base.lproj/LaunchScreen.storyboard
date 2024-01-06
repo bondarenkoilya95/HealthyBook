@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_png" translatesAutoresizingMaskIntoConstraints="NO" id="8Ly-Xb-FCI">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient" translatesAutoresizingMaskIntoConstraints="NO" id="Zop-Jo-aYa">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="health_book_logo" translatesAutoresizingMaskIntoConstraints="NO" id="b5T-we-m97">
+                                <rect key="frame" x="48" y="370.66666666666669" width="297" height="110.66666666666669"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="b5T-we-m97" secondAttribute="height" multiplier="59:22" id="rIo-UL-YRA"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Zop-Jo-aYa" firstAttribute="leading" secondItem="8Ly-Xb-FCI" secondAttribute="leading" id="8Cp-NX-nMV"/>
+                            <constraint firstItem="8Ly-Xb-FCI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RLi-bX-xps"/>
+                            <constraint firstItem="b5T-we-m97" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Sa9-Og-Qob"/>
+                            <constraint firstItem="b5T-we-m97" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="48" id="ULy-UD-FCF"/>
+                            <constraint firstItem="Zop-Jo-aYa" firstAttribute="top" secondItem="8Ly-Xb-FCI" secondAttribute="top" id="VYp-0K-7R2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8Ly-Xb-FCI" secondAttribute="trailing" id="ZM3-QE-Bdp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="b5T-we-m97" secondAttribute="trailing" constant="48" id="b1d-2A-IEL"/>
+                            <constraint firstItem="Zop-Jo-aYa" firstAttribute="trailing" secondItem="8Ly-Xb-FCI" secondAttribute="trailing" id="cz3-9D-yGg"/>
+                            <constraint firstItem="Zop-Jo-aYa" firstAttribute="bottom" secondItem="8Ly-Xb-FCI" secondAttribute="bottom" id="jxb-RQ-YoF"/>
+                            <constraint firstAttribute="bottom" secondItem="8Ly-Xb-FCI" secondAttribute="bottom" id="swb-IW-mCu"/>
+                            <constraint firstItem="8Ly-Xb-FCI" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="wPR-Qa-eDb"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg_png" width="622" height="932"/>
+        <image name="gradient" width="430" height="932"/>
+        <image name="health_book_logo" width="354" height="132"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
